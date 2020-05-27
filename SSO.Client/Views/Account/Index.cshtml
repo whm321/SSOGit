@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script>
+        function logout() {
+            document.location = "@Url.Action("Logout", "Account")" + "?ReturnUrl=" + document.location;
+        }
+    </script>
+</head>
+<body>
+    <div> 
+        <div class="col-md-3">
+            <button onclick="logout()">登出</button>
+        </div>
+    </div>
+</body>
+</html>
